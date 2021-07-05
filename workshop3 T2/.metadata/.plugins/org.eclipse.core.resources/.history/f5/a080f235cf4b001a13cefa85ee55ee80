@@ -1,0 +1,40 @@
+package com.senecacollege.hangMan;
+import java.util.Random;
+
+
+public class hangMan {
+	static String wordList[] = {"table","camp", "system", "aligator", "hangman", "heavy"};
+	static String currentWord;//current word chosen
+	static char word[];//empty string for array of '*'
+	static int attempt = 0;
+	static int correct = 0;
+	static int incorrecct = 0;
+	static boolean complete = false;
+	public static void main(String args[]) 
+	{
+		Random num = new Random();
+		int randNum = num.nextInt(6);//random num 0-6
+		currentWord = wordList[randNum];//setting current word
+		initialize(); 
+		while(complete == false) {
+			
+			
+			
+		}
+		
+	}
+	
+	
+	static void initialize() {
+		char word[] = new char[currentWord.length()];
+		for(int i = 0; i <= currentWord.length(); i++) {//filling 'word' with '*' same length as the length of the current word
+			word[i] = '*';
+		}
+	}
+	
+	
+	
+	
+	
+
+}

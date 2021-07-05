@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\arshi\OneDrive\Desktop\JavaFXBasicExamples (1)\JavaFXBasicExamples"/>
+			<item value="C:\Users\arshi\OneDrive\Desktop\JavaFXBasicExamples (1)\JavaFXBasicExamples\.settings"/>
+			<item value="C:\Users\arshi\OneDrive\Desktop\JavaFxEventDriven\JavaFxEventDriven"/>
+			<item value="C:\Users\arshi\OneDrive\Desktop\SLIDES\CPS209 (JAVA 2)\assignment_2"/>
+			<item value="C:\Users\arshi\OneDrive\Desktop\SLIDES\CPS209 (JAVA 2)\week_5\SnowPerson"/>
+			<item value="C:\Users\arshi\OneDrive\Desktop\SLIDES\CPS 109 (JAVA 1)\assignment_2"/>
+		</list>
+	</section>
+</section>

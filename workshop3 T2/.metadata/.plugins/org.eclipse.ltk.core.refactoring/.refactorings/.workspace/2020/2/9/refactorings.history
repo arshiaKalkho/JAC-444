@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;JavaFXBasicExamples&apos;" deleteContents="false" description="Delete resource &apos;JavaFXBasicExamples&apos;" element1="/JavaFXBasicExamples" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1582597106183"/>&#x0A;<refactoring comment="Rename resource &apos;fx1&apos; to &apos;fxTest&apos;" description="Rename resource &apos;fx1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/fx1" name="fxTest" stamp="1582702891032" updateReferences="true"/>
+</session>

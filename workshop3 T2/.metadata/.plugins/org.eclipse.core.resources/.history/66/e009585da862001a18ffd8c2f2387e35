@@ -1,0 +1,122 @@
+package com.senecacollege.randAccess;
+
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
+import javafx.event.ActionEvent;
+
+
+import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.EventHandler;
+import javafx.stage.Stage;
+
+public class UI extends Application{
+
+
+	@Override
+	public void start(Stage primaryStage) {
+	  HBox HboxFName = new HBox();//first name
+	  HBox HboxLName = new HBox();//last name
+	  HBox thirdRow = new HBox();//third row city province and postal
+	  HBox HboxButtons = new HBox(10);//all buttons
+	
+	  //page and title
+	  VBox layout = new VBox(40);//everything goes in this
+	  
+	  primaryStage.setTitle("Address Book");
+	  
+	  	  
+	  //filling page
+	  Label Fname = new Label(" First Name: ");
+	  Label Lname = new Label(" Last Name: ");
+	  TextField firstName = new TextField();
+	  firstName.setPrefWidth(600);
+	  TextField lastName = new TextField();
+	  lastName.setPrefWidth(550);
+	  HboxFName.getChildren().addAll(Fname, firstName);
+	  HboxLName.getChildren().addAll(Lname, lastName);
+	 
+	
+	 //third row content
+	  TextField city = new TextField();
+	  TextField postalCode = new TextField();
+	  Label Lcity = new Label(" City: ");
+	  Label LPostalCode = new Label(" PostalCode: ");
+	  Label Province = new Label(" Province: ");
+	  
+	  //drop down list
+	  ObservableList<String> options = 
+			    FXCollections.observableArrayList(
+			    		"Alberta",
+			    		"British Columbia",
+			    		"Manitoba",
+			    		"New Brunswick",
+			    		"Newfoundland and Labrador",
+			    		"Northwest Territories",
+			    		"Nova Scotia",
+			    		"Nunavut",
+			    		"Ontario",
+			    		"Prince Edward Island",
+			    		"Quebec",
+			    		"Saskatchewan",
+			    		"Yukon"
+			    );
+	final ComboBox DropDownList = new ComboBox(options);
+	thirdRow.getChildren().addAll(Lcity, city, Province, DropDownList, LPostalCode, postalCode);
+	//buttons
+	  
+	  Button add = new Button("add");
+	  add.setOnAction(e -> System.out.print(true));
+	  add.setMinWidth(100);
+	  
+	  Button first = new Button("first");
+	  first.setOnAction(e -> System.out.print(true));
+	  first.setMinWidth(100);
+	   
+	  Button next = new Button("next");
+	  next.setOnAction(e -> System.out.print(true));
+	  next.setMinWidth(100);
+	 	  
+	  Button previous = new Button("previous");
+	  previous.setOnAction(e -> System.out.print(true));
+	  previous.setMinWidth(100);
+	  
+	  Button last = new Button("last");
+	  last.setOnAction(e -> System.out.print(true));
+	  last.setMinWidth(100);
+	  
+	  Button update = new Button("update");
+	  update.setOnAction(e -> System.out.print(true));
+	  update.setMinWidth(100);
+	
+	  
+	  
+	  
+	 HboxButtons.getChildren().addAll(add, first, next, previous, last, update);
+			
+			
+	layout.getChildren().addAll(HboxFName, HboxLName,thirdRow,HboxButtons);
+	String style = "-fx-background-color: rgba(0, 0, 255, 0.5);";
+	  layout.setStyle(style);	
+	  Scene scene = new Scene(layout, 700,240);
+	  primaryStage.setScene(scene);
+	  primaryStage.show();
+	  
+  
+  
+  
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
+
+
+}

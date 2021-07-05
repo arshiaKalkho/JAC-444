@@ -1,0 +1,77 @@
+package com.senecacollege.hangMan;
+import java.util.*;
+
+
+public class hangMan {
+	static String wordList[] = {"table","camp", "system", "aligator", "hangman", "heavy"};
+	static String currentWord;//current word chosen
+	static String blanckWord;
+	static int attempt = 0;
+	static int correct = 0;//num of guesses
+	static int incorrecct = 0;
+	static int complete = 0;//if = length of the word its completed
+	
+	
+	
+	
+	public static void main(String args[]) /////////////////////////////////////main
+	{
+		Random num = new Random();
+		int randNum = num.nextInt(6);//random num 0-6
+		currentWord = wordList[randNum];//setting current word
+		blanckWord = initialize(); 
+		
+		while(complete != currentWord.length()) {
+			inputLetter();
+			
+			
+		}
+		
+	}
+	
+	
+	static String initialize() {
+		String word = "";
+		
+		for(int i = 0; i <= currentWord.length(); i++) {//filling 'word' with '*' same length as the length of the current word
+			word = word + "*";
+		}
+		return word;
+	};
+	static String updateBlanck(char letter) {//puts the actual word instead of '*' in blackWords
+		String word = "";
+		
+		for(int i = 0; i <= currentWord.length(); i++) {//filling 'word' with '*' same length as the length of the current word
+			if(currentWord.charAt(i) == letter) {
+			word = word + letter;
+			complete++;
+			}
+		}
+		return word;
+		
+		
+		
+	}
+	static void inputLetter() {
+		System.out.println("Enter your guess <"+blanckWord+">: ");
+		Scanner in = new Scanner(System.in);
+		char guess = in.next().charAt(0);
+		if(currentWord.indexOf(guess) == -1){//guess is incorrect case
+			incorrecct++;
+			System.out.println(guess+" is not in the word.");
+			
+		}else {//guess is correct
+			correct++;
+			blanckWord = updateBlanck(guess);
+			
+			
+			
+			
+		}
+	}
+	
+	
+	
+	
+
+}

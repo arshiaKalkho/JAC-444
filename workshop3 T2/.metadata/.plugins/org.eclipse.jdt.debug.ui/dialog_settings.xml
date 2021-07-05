@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="false"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=hangMan/src&amp;lt;com.senecacollege.hangMan{hangMan.java[hangMan&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=banks/src&amp;lt;com.senecacollege.banks{Bank.java[Bank&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=FileLetterCounter/src&amp;lt;com.senecacollege.FileLetterCounter{FileLetterCounter.java[FileLetterCounter&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=assignment_2/&amp;lt;{SnowmanRunner.java[SnowmanRunner&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=SnowPerson/&amp;lt;{SnowPersonViewer.java[SnowPersonViewer&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=assignment_2/&amp;lt;{GroceryStoreViewer.java[GroceryStoreViewer&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=fxTest/src&amp;lt;com.senecacollege.shape{Shape.java[Shape&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="100"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="expressionHistory">
+	</section>
+	<section name="conditionHistory">
+	</section>
+</section>
